@@ -1,0 +1,47 @@
+/* HEADER / NAV BAR STYLES START */
+
+header h1 a{
+  font-weight: bold;
+  margin-top: auto;
+  font-size: 40px;
+  color: hsl(236, 70%, 30%);
+  text-decoration: none;
+}
+  
+.header-footer {
+  padding: 20px 35px;
+  background-color: hsl(237, 22%, 63%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+
+
+  
+.header-footer nav {
+  margin: 7px 0;
+}
+  
+.header-footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-style: italic;
+}
+
+  
+.header-footer nav ul li a {
+  margin: 0 30px;
+  font-weight: normal;
+  font-size: 1.55vw;
+  text-decoration: none;
+  color: hsl(236, 70%, 50%);
+}
+
+footer nav ul li a{
+  margin: 0 25px; 
+}
