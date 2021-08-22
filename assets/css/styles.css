@@ -95,6 +95,28 @@ justify-content:left;
   right: 0;
   font-size: 60px;
   margin: 0 200px 0 0
-
+}
+article{
+  background-color: cornflowerblue;
+  position: relative;
+}
+article aside{
+  padding: 30px 0 0 20px;
+  height: 700px;
+  width: 251px;
 }
 
+article p { 
+  position: absolute;
+  width: 708px;
+  height: 350px;
+  background-color: darkgoldenrod;
+  border: black 5px solid;
+  font-size: 40px;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 200px;
+  margin-bottom: 200px;
+
+}
