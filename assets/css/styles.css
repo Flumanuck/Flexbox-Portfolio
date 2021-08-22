@@ -12,7 +12,6 @@ header h1 a{
 }
   
 .header-footer {
-  padding: 20px 35px;
   background-color: hsl(237, 22%, 63%);
   display: flex;
   justify-content: space-between;
@@ -63,6 +62,12 @@ footer nav ul li a{
   text-shadow: 2px 2px blue;
   padding-right: 5px;
   border-right: black 5px solid;
+  margin: 0;
+  padding: 0;
+  background-color: #a8adba;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
 } 
 
 footer{
@@ -96,17 +101,19 @@ justify-content:left;
   font-size: 60px;
   margin: 0 200px 0 0
 }
-article{
+
+.intro{
   background-color: cornflowerblue;
   position: relative;
 }
-article aside{
+
+.intro aside{
   padding: 30px 0 0 20px;
   height: 700px;
   width: 251px;
 }
 
-article p { 
+.intro p { 
   position: absolute;
   width: 708px;
   height: 350px;
@@ -118,5 +125,38 @@ article p {
   bottom: 0;
   margin-right: 200px;
   margin-bottom: 200px;
-
 }
+
+.projects {
+  background-color: darkkhaki;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.projects aside{
+  padding: 30px 0 0 20px;
+  height: 1000px;
+  width: 251px;
+}
+
+.project-links {
+  position: relative;
+}
+
+.project-links a .run-buddy {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  border: darkslategrey 20px solid;
+  opacity: 0.6;
+  transition: 0.3s;
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.project-links a .run-buddy:hover {opacity: 1}
