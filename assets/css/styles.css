@@ -61,7 +61,7 @@ footer nav ul li a{
   font-weight: bold;
   text-shadow: 2px 2px blue;
   padding-right: 5px;
-  border-right: black 5px solid;
+  border: black 5px solid;
   margin: 0;
   padding: 0;
   background-color: #a8adba;
@@ -78,6 +78,10 @@ footer aside {
   padding-top: 20px;
 }
 
+.footer-title {
+  min-height: 20vh;
+}
+
 .hero{
 height: 500px;
 width: 100%;
@@ -89,7 +93,7 @@ justify-content:left;
 }
 
 .hero .headshot {
-  width: 35%;
+  width: 650px;
   height: 500px;
 }
 
@@ -144,19 +148,46 @@ justify-content:left;
 }
 
 .project-links {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.project-links a .run-buddy {
-  position: absolute;
+.biggest a .run-buddy {
+  margin-top: 40px;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.flexbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
+  flex-direction: column;
+}
+
+.sub-box{
+  border: black 1px solid;
+  width: auto;
+  height: auto;
+  align-self: flex-end;
+  
+}
+
+
+.image a img{
+  display: flex;
+  flex-wrap: wrap;
   border: darkslategrey 20px solid;
   opacity: 0.6;
   transition: 0.3s;
-  max-width: 350px;
-  max-height: 350px;
 }
 
+.project-links a .smaller-links{
+  max-height: 150px;
+  max-width: 150px;
+}
+
+
 .project-links a .run-buddy:hover {opacity: 1}
+
+.project-links a .smaller-links:hover {opacity: 1}
